@@ -69,7 +69,7 @@ public class BranchNameFilterTrait extends BaseGithubExtendedFilterTrait {
                         if (found) {
                             request.listener().getLogger().format("%n    Will Build branch %s.%n", branchName);
                         } else {
-                            request.listener().getLogger().format("%n    Won't build branch %s. name doesn't match filter.", branchName);
+                            request.listener().getLogger().format("%n    Won't build branch %s. Name doesn't match filter.", branchName);
                         }
                         return !found;
 
