@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>4.54</version>
+    <version>6.2153.vcf31911d10c4</version>
     <relativePath />
   </parent>
 
@@ -16,9 +16,9 @@
 
   <properties>
     <!-- Baseline Jenkins version you use to build the plugin. Users must have this version or newer to run. -->
-    <jenkins.version>2.387.1</jenkins.version>
-    <java.level>11</java.level>
-    <github-branch-source.version>1701.v00cc8184df93</github-branch-source.version>
+    <jenkins.baseline>2.541</jenkins.baseline>
+    <jenkins.version>${jenkins.baseline}.3</jenkins.version>
+    <github-branch-source.version>1967.1969.v205fd594c821</github-branch-source.version>
   </properties>
 
   <name>Github additional traits plugin</name>
@@ -65,8 +65,8 @@
     <dependencies>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.387.x</artifactId>
-        <version>1887.vda_d0ddb_c15c4</version>
+        <artifactId>bom-${jenkins.baseline}.x</artifactId>
+        <version>6269.v7a_159d68a_366</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -78,16 +78,6 @@
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>github-branch-source</artifactId>
       <version>${github-branch-source.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>io.jenkins.plugins</groupId>
-      <artifactId>okhttp-api</artifactId>
-      <version>4.10.0-132.v7a_7b_91cef39c</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
-      <version>3.12.0</version>
     </dependency>
   </dependencies>
 
